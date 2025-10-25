@@ -126,8 +126,6 @@ os.system("chmod u+s /bin/bash")
 
 * Esta máquina ilustra lo peligroso que es ejecutar tareas periódicas (cronjobs) sobre scripts que no están protegidos correctamente: si un script ejecutado por `root` puede ser editado por un usuario menos privilegiado, la escalada a `root` es trivial.
 * Revisa cuidadosamente permisos y políticas de `sudo` en servidores productivos.
-* Si quieres, lo puedo transformar en un `README.md` listo para subir (archivo descargable), o añadir capturas/evidencias (salidas de comandos, logs). ¿Lo dejo en un archivo para que lo descargues?
-
 ```
 ::contentReference[oaicite:0]{index=0}
 ```
