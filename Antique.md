@@ -165,8 +165,4 @@ http://localhost:631/admin/log/error_log
 
 * Esta máquina ilustra una cadena clásica donde servicios de gestión expuestos (SNMP, Telnet, paneles administrativos) y malas prácticas en la configuración (CUPS accesible sin restricciones) se combinan para una escalada completa.
 * En entornos reales, la exposición de SNMP y Telnet, junto con interfaces administrativas sin autenticación/seguridad, representa riesgos críticos.
-* Si quieres, puedo transformar este README en un archivo `README.md` descargable listo para subir a tu repositorio, o añadir capturas de pantalla y salidas de comandos si las pegas aquí.
 
-```
-::contentReference[oaicite:0]{index=0}
-```
