@@ -1,7 +1,7 @@
 # Cap — Writeup
 
 **Resumen rápido**  
-Escaneé la máquina y encontré servicios FTP, SSH y HTTP. En la web descubrí una funcionalidad para generar y descargar capturas de tráfico (pcaps). Aproveché un problema de control de acceso (IDOR) en ese servicio para descargar una pcap con tráfico de otro usuario; analizando la pcap encontré credenciales FTP en texto claro, con las que accedí a la máquina como `nathan`. Después de la fase de userland, identifiqué una capability inusual asignada a `python3.8` (`cap_setuid`), la cual me permitió, mediante una técnica que omito por razones de seguridad responsable, obtener privilegios más altos y leer `root.txt`.
+Escaneé la máquina y encontré servicios FTP, SSH y HTTP. En la web descubrí una funcionalidad para generar y descargar capturas de tráfico (pcaps). Aproveché un problema de control de acceso (IDOR) en ese servicio para descargar una pcap con tráfico de otro usuario; analizando la pcap encontré credenciales FTP en texto claro, con las que accedí a la máquina como `nathan`. Después de la fase de userland, identifiqué una capability inusual asignada a `python3.8` (`cap_setuid`), la cual me permitió, mediante un script de python, obtener privilegios más altos y leer `root.txt`.
 
 ---
 
